@@ -17,7 +17,6 @@ body{
 
 .cabeceraPrincipal{
     background-color: #3B4283;
-    box-shadow: #000 3px 2px 2px;
 }
 
 .cabeceraPrincipal{
@@ -30,6 +29,8 @@ body{
     background-color: #3B4283;
     text-align: center;
     padding-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .menuPrincipal a{
@@ -61,7 +62,7 @@ body{
     color: #3B4283;
 }
 
-.menuPlato{
+.menuNoticia{
     width: 32%;
     background-color: #ededee;
     border: 1px solid #ededee;
@@ -73,26 +74,49 @@ body{
     
 }
 
-.menuPlato h3{
+.menuNoticia h3{
     color: #3B4283;
     padding: 10px;
 }
 
-.menuPlato p{
+.menuNoticia p{
     color: #000;
     padding-bottom: 15px;
 }
-.menuPlato img{
+.menuNoticia img{
     width: 100%;
 
 }
 
-.menuPlato  button{
+.menuNoticia button{
+    background-color: #edd502;
     border-radius: 10px;
     border: 1px solid;
     text-align: right;
     padding: 0.5em 1em;
-    
+}
+.menuChef{
+    display: inline-block;
+}
+
+.menuChef img{
+    width: 25%;
+    border-radius: 50%;
+    margin-left: -100%;
+}
+
+.menuChef h3{
+    color: #3B4283;
+    background-color: #000;
+}
+
+.menuChef p{
+    background-color: #4c99d4;
+}
+
+.alinearBoton{
+    text-align: center;
+    padding-bottom: 5%;
 }
 
 .piePagina{
@@ -103,4 +127,20 @@ body{
 .piePagina h6{
     text-align: center;
     padding: 2em 0;
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        background-color: blue;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .menuNoticia{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        
+    }
 }
