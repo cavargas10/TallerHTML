@@ -44,11 +44,15 @@
             </div>
             <div class = "grupoInput">
                 <label for="correo">Correo</label>
-                <input type="email" name="correo" id="correo" placeholder="Ingrese su correo electronico">
+                <input type="text" name="correo" id="correo" placeholder="Ingrese su correo" required>
+                
             </div>
             <div class = "grupoInput">
-                <label for="edad">Edad</label>
-                <input type="number" name="edad" id="edad" placeholder="Ingrese su edad" required>
+                <label for="rol">Tipo de Usuario</label>
+                <select id="tipoUser" name="tipoUser">
+                    <option value="1">Administrador</option>
+                    <option value="2">Visitante</option>
+                </select>
             </div>
             <div class = "grupoInput">
                 <button type = "submit" value="Procesar">PROCESAR</button>
